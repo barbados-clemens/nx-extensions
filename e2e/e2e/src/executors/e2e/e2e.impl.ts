@@ -66,13 +66,12 @@ export async function* nxPluginE2EExecutor(
     logger.error(e.message);
   }
 
-  cleanupVerdaccioStorage();
-
   try {
     child.kill();
   } catch (e) {
     await killPort(4872);
   }
+  cleanupVerdaccioStorage();
 }
 
 export default nxPluginE2EExecutor;

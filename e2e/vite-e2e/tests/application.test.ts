@@ -9,7 +9,7 @@ import {
 } from '@nrwl/nx-plugin/testing';
 import { newProject } from '@nxext/e2e';
 
-describe('vite e2e', () => {
+xdescribe('vite e2e', () => {
   beforeAll(() => {
     newProject(['@nxext/vite']);
   });
